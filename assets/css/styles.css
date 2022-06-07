@@ -1,1 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap');
+
+*,
+::before,
+::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --light-color: #f3f3fe;
+    --dark-color: #363636;
+    --border-top-color: rgba(0,0,0,.1);
+    --link-hover-color: rgba(255,255,255,.2);
+    --title-font-family: 'Playfair Display', 'serif';
+    --body-font-family: 'Poppins', 'sans-serif';
+    --container-width: 96rem;
+    --container-padding: 1.5rem;
+    --section-vetical-spacing: 8rem;
+}
+
+html{
+
+fontsize: 62.5%;
+
+}
+
+body{
+    font-family: var(--body-font-family);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    overflow-x: hidden;
+
+}
+
+body.dark{
+    --light-color: #363636;
+    --dark-color: #f3f3fe;
+    --border-top-color: rgba(255,255,255,.1);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
+img{
+    max-width: 100%; 
+    display: block;
+}
+
+ul{
+    list-style: none;
+}
+
+span{
+    display: inline-block; 
+}
+
+i{
+    font-size: 2.4 rem;
+}
+
+input,
+button,
+textarea{
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
