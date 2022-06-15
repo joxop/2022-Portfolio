@@ -34,7 +34,7 @@ const toggleTheme = () => {
     bodyElement.classList.toggle('dark-theme')
    
     if (bodyElement.classList.contains('dark-theme')){
-        localStorage.setItem('darkTheme', 'active')
+        localStorage.setItem('darkTheme','on')
     }else{
         localStorage.removeItem('darkTheme')
 
