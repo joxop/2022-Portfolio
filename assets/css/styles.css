@@ -17,12 +17,12 @@
     --body-font-family: 'Poppins', 'sans-serif';
     --container-width: 96rem;
     --container-padding: 1.5rem;
-    --section-vetical-spacing: 8rem;
+    --section-vertical-spacing: 8rem;
 }
 
 html{
 
-fontsize: 62.5%;
+font-size: 62.5%;
 
 }
 
@@ -80,6 +80,9 @@ textarea{
         max-width: var(--container-width);
         margin: 0 auto;
         padding: 0 var(--container-padding);
+        /* height: 8rem;
+        position: relative; */
+        
     }
     .section{
         padding-block: var(--section-vertical-spacing);
@@ -113,13 +116,7 @@ textarea{
 
 }
 
-.container {
-    max-width: var(--container-width);
-    margin:0 auto;
-    padding: 0 var(--container-padding);
-    height: 8rem;
-    position: relative;
-}
+
 
 .logo{
     font-family: var(--title-font-family);
@@ -166,7 +163,7 @@ textarea{
     color: var(--light-color);
     padding: .8rem 1.5rem;
     border-radius: .4rem;
-    /* z-index: -1;  */
+    z-index: -1; 
     pointer-events: none;
      transform: scale(0);
     transform-origin: right;
@@ -178,9 +175,9 @@ textarea{
     gap: 2.5rem;
 }
 
-.menu > .list{
+/* .menu > .list{
     opacity: 0
-}
+} */
 
 .menu > .list .list-link{
     text-transform: uppercase;
@@ -280,8 +277,7 @@ textarea{
     top: 3.8rem;
     right: -1.8rem;
 }
-.has-sparkles-alt::before{
-/* .has-sparkles-alt{ */
+.has-sparkles-alt::after{
     content: "";
     position: absolute;
     top: 50%;
