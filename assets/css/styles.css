@@ -469,6 +469,7 @@ textarea {
     align-items: center;
     justify-content: center;
     transition: background-color .25s;
+    transition: height .5s;
 }
 
 .card-image img{
@@ -642,7 +643,7 @@ background-color: #b3bbce;
         .inline-image{
             width: 15rem;
             height: 15rem;
-          }s
+          }
           
     
   
