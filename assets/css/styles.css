@@ -458,6 +458,7 @@ textarea {
 
 .portfolio-cards{
     gap: 2.5rem;
+    transition:.5s;
 }
 
 .card-image{
@@ -482,6 +483,7 @@ textarea {
 .portfolio-card:hover .card-image,
 .portfolio-card:focus .card-image{
     background-color: #363636;
+    height:40rem;
 }
 
 .card-heading{
@@ -578,7 +580,8 @@ textarea {
     padding: .5rem;
 }
 
-.input input:focus + .input-label{
+.input input:focus + .input-label, 
+.input input:valid + .input-label{
     transform: translateY(-2.5rem);
 }
 
